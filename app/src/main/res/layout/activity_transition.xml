@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.boby.meterialanimationdemo.TransitionActivity"
+    android:background="#daded47d">
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:text="这是运用了一个分解（Explode）效果启动的Activity, Transitions 动画效果可以用代码设置也可在xml定义" />
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sample1_button1"
+            style="@style/ButtonStytle"
+            android:layout_weight="1"
+            android:text="Explode (Code)"
+            android:onClick="explodeCode"/>
+
+        <Button
+            android:id="@+id/sample1_button2"
+            style="@style/ButtonStytle"
+            android:layout_weight="1"
+            android:text="Explode (XML)"
+            android:onClick="explodeXML"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sample1_button3"
+            style="@style/ButtonStytle"
+            android:layout_weight="1"
+            android:text="Slide (Code)"
+            android:onClick="slideCode"/>
+
+        <Button
+            android:id="@+id/sample1_button4"
+            style="@style/ButtonStytle"
+            android:layout_weight="1"
+            android:text="Slide (XML)"
+            android:onClick="slideXML"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sample1_button6"
+        style="@style/ButtonStytle"
+        android:text="Exit 进入时动画"
+        android:onClick="exit"/>
+
+    <Button
+        android:id="@+id/sample1_button5"
+        style="@style/ButtonStytle"
+        android:text="Exit 覆盖进入时动画"
+        android:onClick="exitOverriding"/>
+
+</LinearLayout>

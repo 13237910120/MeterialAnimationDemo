@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.Yellow" parent="AppTheme">
+        <item name="android:colorPrimary">@color/yellow1</item>
+        <item name="android:colorPrimaryDark">@color/yellow1</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/yellow1</item>
+        <item name="android:colorAccent">@color/yellow1</item>
+    </style>
+
+    <style name="AppTheme.Blue" parent="AppTheme">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimary</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/color3</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Share1" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+    </style>
+</resources>
